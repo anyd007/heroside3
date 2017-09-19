@@ -20,7 +20,7 @@ section.hero #start {
     color: #342c2a;
 }
 
-section.hero #slide1, #slide2, #slide3 {
+section.hero #slide1, section.hero #slide2, section.hero #slide3 {
     position: absolute;
     width: 100%;
     height: 100%;
