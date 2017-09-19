@@ -27,7 +27,11 @@ section.hero #slide1, #slide2, #slide3 {
     margin: 0;
     padding: 0;
     opacity: 0;
-
+    -webkit-transition: transform 2s ease-in;
+    -moz-transition: transform 2s ease-in;
+    transition: transform 2s ease-in;
+    background-size: cover;
+    background-position: center center;
 }
 
 
@@ -36,17 +40,14 @@ section.hero #slide1, #slide2, #slide3 {
 
 /*sekscja hero*/
 section.hero #slide1 {
-    background: url("images/shutterstock_10611928.jpg");
-    background-size: cover;
+    background-image: url("images/shutterstock_10611928.jpg");
 }
 /*koniec sekcji hero*/
 section.hero #slide2 {
-    background: url("images/andrei-coman-302139.jpg") bottom;
-    background-size: cover;
+    background-image: url("images/andrei-coman-302139.jpg") bottom;
 }
 section.hero #slide3 {
-    background: url("images/HOME12.jpg");
-    background-size: cover;
+    background-image: url("images/HOME12.jpg");
 }
 section.hero p {
     font-family: 'Yantramanav', sans-serif;
@@ -89,7 +90,7 @@ section.hero p.text3 {
 }
 
 section.hero .wrapper {
-   width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -174,8 +175,9 @@ section.hero .btn:hover {
 }
 
 
-section.hero #slide1:target, #slide2:target, #slide3:target {
-    animation: slide 0.5s ease-in-out forwards;
+section.hero #slide1:target, section.hero #slide2:target, section.hero #slide3:target {
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 
